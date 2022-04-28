@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+        box-sizing: border-box;
+        /* 1rem = 10px */
+        font-size: 62.5%;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      :root {
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospotal-green: #acd9b2;
+        --white: #fff;
+        --black: #000;
+        --sm: 1.4rem;
+        --md: 1.6rem;
+        --lg: 1.8rem;
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.6rem;
+      }
+      .desktop-menu{
+          width: 15rem;
+          height: auto;
+          border: 1px solid var(--very-light-pink);
+          border-radius: 1rem;
+          padding: 2rem;
+      }
+      .desktop-menu ul{
+          text-align: end;
+      }
+      .desktop-menu ul li{
+          list-style: none;
+          font-weight: bold;
+      }
+      .desktop-menu ul li:last-child{
+          padding-top: 2rem;
+          border-top: 0.1rem solid var(--very-light-pink);
+          font-weight: normal;
+      }
+      .desktop-menu ul li:last-child a{
+          color: var(--hospotal-green);
+          font-size: var(--sm);
+      }
+      .desktop-menu ul li a{
+          text-decoration: none;
+          color: var(--black);
+          display: inline-block;
+          margin-bottom: 2rem;
+      }
+    </style>
+</head>
+<body>
+    <div class="desktop-menu">
+        <ul>
+            <li><a href="#" class="tittle">My orders</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Sign out</a></li>
+        </ul>
+    </div>
+</body>
+</html>
